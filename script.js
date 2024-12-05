@@ -22,29 +22,37 @@ function Footer(props) {
 //To Do List component 
 function TodoList(props) {
     return (
-        <div>
-            <ul>
-                <li>
-                    <input type='checkbox' id="Todo" defaultChecked={false}></input>
-                    <label for="Todo">{props.todos}</label>
-                </li>
-            </ul>
-            <button type="button">Click Me!</button>
+        // <div>
+        //     <ul>
+        //         <li>
+        //             <input type='checkbox' id="Todo" defaultChecked={false}></input>
+        //             <label for="Todo">{props.todos}</label>
+        //         </li>
+        //     </ul>
+        //     <button type="button">Delete</button>
+        // </div>
+        <div> 
+            <ul> 
+                {props.todos.map(todo => ( <li key={todo.id}> 
+                    <input type='checkbox' id={`todo-${todo.id}`} defaultChecked={todo.completed}></input> 
+                    <label htmlFor={`todo-${todo.id}`}>{todo.text}</label> </li> ))} 
+            </ul> 
+            <button type="button">Delete</button>
         </div>
     );
 }
 
 
-const TodoListArr = (props) => {
-    // create empty student array
-     let todo_array = props.todos.map(todo => (
-         <TodoList {todo.todos} />
-     ));
+// const TodoListArr = (props) => {
+//     // create empty student array
+//      let todo_array = props.todos.map(todo => (
+//          <TodoList {todo.todos} />
+//      ));
 
-     return (
-         {todo_array}
-     )
-}
+//      return (
+//          {todo_array}
+//      )
+// }
 
 
 //Card component 
@@ -76,7 +84,6 @@ function App() {
             <Card title="My Card Title" subtitle="My Card Subtitle" content="This is the content of my card." image="https://example.com/my-image.jpg" />
  
             <Footer message="Contact me at contact@mywebsite.com" />
-
         </div>
     );
 }
