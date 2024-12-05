@@ -1,0 +1,66 @@
+
+.header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.header h1 {
+    text-align: center;
+    padding: 0.5em;
+    color: #992600;
+}
+
+.list {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.list ul {
+    list-style-type: none;
+}
+
+.list ul li {
+    margin-bottom: 10px;
+}
+
+.list button {
+    background-color: #992600; 
+    color: white; 
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, box-shadow 0.3s;
+    border-radius: 10px;
+}
+
+.list button:hover {
+    background-color: #cc3000; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-color: #992600;
+    border-radius: 10px;
+    border: 1px solid #4d1100;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    color: #fff;
+}
+
+.card h2 {
+    text-align: center;
+}
+
+
+.footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer p {
+    font-style: italic;
+}

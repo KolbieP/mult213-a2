@@ -1,7 +1,7 @@
 //Header component 
 function Header(props) {
     return (
-        <div>
+        <div className="header">
             <h1>{props.title}</h1>
             <p>{props.message}</p>
         </div>
@@ -11,7 +11,7 @@ function Header(props) {
 //Footer component 
 function Footer(props) {
     return (
-        <div>
+        <div className="footer">
             <p>{props.message}</p>
             <p>Copyright © 2023 My Website. All rights reserved.</p>
         </div>
@@ -31,7 +31,7 @@ function TodoList(props) {
         //     </ul>
         //     <button type="button">Delete</button>
         // </div>
-        <div> 
+        <div className="list"> 
             <ul> 
                 {props.todos.map(todo => ( <li key={todo.id}> 
                     <input type='checkbox' id={`todo-${todo.id}`} defaultChecked={todo.completed}></input> 
@@ -58,7 +58,7 @@ function TodoList(props) {
 //Card component 
 function Card(props) {
     return (
-        <div>
+        <div className="card">
             <h2>{props.title}</h2>
             <h3>{props.subtitle}</h3>
             <p>{props.content}</p>
