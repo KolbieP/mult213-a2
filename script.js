@@ -22,37 +22,17 @@ function Footer(props) {
 //To Do List component 
 function TodoList(props) {
     return (
-        // <div>
-        //     <ul>
-        //         <li>
-        //             <input type='checkbox' id="Todo" defaultChecked={false}></input>
-        //             <label for="Todo">{props.todos}</label>
-        //         </li>
-        //     </ul>
-        //     <button type="button">Delete</button>
-        // </div>
-        <div className="list"> 
-            <ul> 
-                {props.todos.map(todo => ( <li key={todo.id}> 
-                    <input type='checkbox' id={`todo-${todo.id}`} defaultChecked={todo.completed}></input> 
-                    <label htmlFor={`todo-${todo.id}`}>{todo.text}</label> </li> ))} 
-            </ul> 
-            <button type="button">Delete</button>
-        </div>
+         <div className="list"> 
+             <ul> 
+                 {props.todos.map(todo => ( <li key={todo.id}> 
+                     <input type='checkbox' id={todo.id} defaultChecked={todo.completed}></input> 
+                     <label htmlFor={todo.id}>{todo.text}</label> </li> ))} 
+             </ul> 
+             <button type="button">Delete</button>
+         </div>
     );
 }
 
-
-// const TodoListArr = (props) => {
-//     // create empty student array
-//      let todo_array = props.todos.map(todo => (
-//          <TodoList {todo.todos} />
-//      ));
-
-//      return (
-//          {todo_array}
-//      )
-// }
 
 
 //Card component 
