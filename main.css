@@ -56,6 +56,10 @@
     text-align: center;
 }
 
+.card img {
+    width: 395px; 
+    height: auto;
+}
 
 .footer {
     font-family: Verdana, Geneva, Tahoma, sans-serif;

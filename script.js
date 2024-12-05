@@ -61,7 +61,7 @@ function App() {
                 { id: 3, text: "Do laundry", completed: true }
                 ]} />  
             
-            <Card title="My Card Title" subtitle="My Card Subtitle" content="This is the content of my card." image="https://example.com/my-image.jpg" />
+            <Card title="My Card Title" subtitle="My Card Subtitle" content="This is the content of my card." image="media/image.jpeg" />
  
             <Footer message="Contact me at contact@mywebsite.com" />
         </div>
