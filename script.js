@@ -24,16 +24,16 @@ function TodoList(props) {
     return (
          <div className="list"> 
              <ul> 
-                 {props.todos.map(todo => ( <li key={todo.id}> 
-                     <input type='checkbox' id={todo.id} defaultChecked={todo.completed}></input> 
-                     <label htmlFor={todo.id}>{todo.text}</label> </li> ))} 
+                 {props.todos.map(todo => ( 
+                    <li key={todo.id} style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}> 
+                        <input type='checkbox' id={todo.id} defaultChecked={todo.completed}></input> 
+                        <label htmlFor={todo.id}>{todo.text}</label> 
+                    </li> ))} 
              </ul> 
              <button type="button">Delete</button>
          </div>
     );
 }
-
-
 
 //Card component 
 function Card(props) {
@@ -46,7 +46,6 @@ function Card(props) {
         </div>
     );
 }
-
 
 // App component 
 //Root of the entrie web application
